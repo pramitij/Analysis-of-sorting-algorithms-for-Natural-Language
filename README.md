@@ -14,11 +14,11 @@ Click on run or Control + R to run the driver class and start benchmarking.</br>
 ## Test Cases
 To run the test cases for Chinese words:</br>
 Go to <i>src>test>java.edu.neu.coe.info6205.sort>choose the test case to run</i></br>
-Click on run or Control + R to run the test cases.</br>
+Click on run or <i>Control + R</i> to run the test cases.</br>
 
 To run the test cases for Telugu words:</br>
 Go to <i>src>test>java.edu.neu.coe.info6205.sort>choose the algorithm test case to run</i></br>
-Click on run or Control + R to run the test cases.</br>
+Click on run or <i>Control + R</i> to run the test cases.</br>
 
 ## Algorithms
 Sorting algorithms used for Chinese words:
