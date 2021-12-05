@@ -46,5 +46,5 @@ All the input and output files are present in <i>src>main>java>resources</i></br
 
 <i>OutputChinese.txt</i> and <i>OutputTelugu.txt</i> consist of the log output of the benchmarking.</br>
 
-All the tables and graphs plotted are in Graphs.xlsx</br>
+All the tables and graphs plotted are in <i>Graphs.xlsx</i></br>
 
