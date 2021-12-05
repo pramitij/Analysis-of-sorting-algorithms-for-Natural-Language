@@ -42,7 +42,7 @@ The files used for test cases are as follows:</br>
   * <i>1000-chinese-words-shuffled.txt</i></br>
   * <i>1000-telugu-words-shuffled.txt</i></br>
 
-All the input and output files are present in src>main>java>resources.</br>
+All the input and output files are present in <i>src>main>java>resources</i></br>
 
 <i>OutputChinese.txt</i> and <i>OutputTelugu.txt</i> consist of the log output of the benchmarking.</br>
 
