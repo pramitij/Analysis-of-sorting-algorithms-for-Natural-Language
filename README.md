@@ -3,11 +3,11 @@
 ## Benchmarking
 The Driver class is the entry to benchmark all the sorting algorithms.</br>
 
-To run the benchmark for Chinese words.</br>
+To run the benchmark for Chinese words:</br>
 Go to <i>src>main>java.edu.neu.coe.info6205.sort>driver.java</i></br>
 Click on run or Control + R to run the driver class and start benchmarking.</br>
 
-To run the benchmark for Telugu words.</br>
+To run the benchmark for Telugu words:</br>
 Go to <i>src>main>java.edu.neu.coe.info6205.sort>driverTelugu.java</i></br>
 Click on run or Control + R to run the driver class and start benchmarking.</br>
 
