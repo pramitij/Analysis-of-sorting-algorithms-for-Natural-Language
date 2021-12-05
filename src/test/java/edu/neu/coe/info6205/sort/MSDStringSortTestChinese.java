@@ -50,4 +50,37 @@ public class MSDStringSortTestChinese {
         assertArrayEquals(a, b);
 
     }
+
+    @Test
+    public void sortChinese1() {
+
+        String[] sortedChinese = new String[]{"曾佳珍", "范亚文", "侯封", "江兆涛", "闫炳华", "余康康"};
+        String[] unsortedChinese = new String[]{"曾佳珍", "闫炳华", "余康康", "侯封", "范亚文", "江兆涛"};
+        Arrays.sort(unsortedChinese);
+        MSDStringSortChinese.sort(unsortedChinese);
+        System.out.println(Arrays.toString(unsortedChinese));
+        assertArrayEquals(sortedChinese, unsortedChinese);
+    }
+
+    @Test
+    public void sortChinese2() {
+        String[] sortedChinese = new String[]{"曾佳珍", "杜丽伟", "范亚文", "冯翠君", "范成章", "侯封", "江兆涛", "李继翔", "廖前进", "刘久胜", "赖春宝", "潘从伟", "姚佳鑫", "应丽娜", "余康康","闫炳华"};
+
+        String[] unsortedChinese = new String[]{"曾佳珍", "闫炳华", "余康康", "侯封", "范亚文", "江兆涛", "刘久胜", "冯翠君", "赖春宝", "李继翔", "范成章", "杜丽伟", "廖前进", "姚佳鑫", "潘从伟","应丽娜" };
+        Arrays.sort(unsortedChinese);
+        MSDStringSortChinese.sort(unsortedChinese);
+        System.out.println(Arrays.toString(unsortedChinese));
+        assertArrayEquals(sortedChinese, unsortedChinese);
+    }
+
+    @Test
+    public void sortChinese3() {
+
+        String[] sortedChinese = new String[]{"曾佳珍", "陈立昆", "杜丽伟", "范亚文", "冯翠君", "范成章", "顾新新", "侯封", "江兆涛", "李继翔", "李开森", "廖前进", "林鸿森", "刘定基", "刘定基", "刘久胜", "赖春宝", "潘从伟", "肖燕珊", "杨列仁", "杨列仁", "姚佳鑫", "应丽娜", "余康康", "闫炳华"};
+        String[] unsortedChinese = new String[]{"曾佳珍", "闫炳华", "余康康", "侯封", "范亚文", "江兆涛", "刘久胜", "冯翠君", "赖春宝", "李继翔", "范成章", "杜丽伟", "廖前进", "姚佳鑫", "潘从伟","应丽娜", "杨列仁", "杨列仁", "刘定基", "刘定基", "李开森", "肖燕珊", "林鸿森", "顾新新", "陈立昆"};
+        Arrays.sort(unsortedChinese);
+        MSDStringSortChinese.sort(unsortedChinese);
+        System.out.println(Arrays.toString(unsortedChinese));
+        assertArrayEquals(sortedChinese, unsortedChinese);
+    }
 }

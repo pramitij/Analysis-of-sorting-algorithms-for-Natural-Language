@@ -18,4 +18,14 @@ public class TimSortTest {
         assertArrayEquals(expected, input);
     }
 
+    String[] input1 = "Lorem ipsum dolor sit amet".split(" ");
+    String[] expected1 = "Lorem amet dolor ipsum sit".split(" ");
+
+    @Test
+    public void sortEnglishString() {
+        TimSort.sort(input1);
+        System.out.println(Arrays.toString(input1));
+        assertArrayEquals(expected1, input1);
+    }
+
 }

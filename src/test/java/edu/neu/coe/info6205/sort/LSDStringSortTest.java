@@ -1,6 +1,8 @@
 package edu.neu.coe.info6205.sort;
 
 
+import edu.neu.coe.info6205.sort.huskysort.HuskyCoderFactory;
+import edu.neu.coe.info6205.sort.huskysort.PureHuskySort;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -17,6 +19,16 @@ public class LSDStringSortTest {
         LSDStringSort.sort(input);
         System.out.println(Arrays.toString(input));
         assertArrayEquals(expected, input);
+    }
+
+    String[] input1 = "Lorem ipsum dolor sit amet".split(" ");
+    String[] expected1 = "Lorem amet dolor ipsum sit".split(" ");
+
+    @Test
+    public void sortEnglishString() {
+        LSDStringSort.sort(input1);
+        System.out.println(Arrays.toString(input1));
+        assertArrayEquals(expected1, input1);
     }
 
 
