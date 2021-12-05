@@ -1,12 +1,16 @@
 package edu.neu.coe.info6205.sort;
 
+import com.ibm.icu.text.Collator;
+import com.ibm.icu.util.ULocale;
 
-public class TimSort {
+import java.util.Locale;
+
+public class TimSortChinese {
     //static ChineseComparator t=new ChineseComparator();
     static int RUN = 32;
 
     public static int compare(String s1, String s2) {
-        return s1.compareTo(s2);
+        return Collator.getInstance(Locale.CHINA).compare(s1, s2);
     }
 
     static int min(int a, int b)

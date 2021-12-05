@@ -28,6 +28,7 @@ public class MSDStringSort {
      * @param d the number of characters in each String to be skipped.
      */
     private static void sort(String[] a, int lo, int hi, int d) {
+        //if (hi < lo + cutoff) InsertionSortMSD.sort(a, lo, hi, d);
         if (hi < lo + cutoff) InsertionSortMSD.sort(a, lo, hi, d);
         else {
             int[] count = new int[radix + 2];        // Compute frequency counts.

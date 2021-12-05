@@ -12,7 +12,7 @@ import java.util.Comparator;
 public class InsertionSortMSD {
 
 
-    Comparator cmp = Collator.getInstance(java.util.Locale.CHINA);
+    //Comparator cmp = Collator.getInstance(java.util.Locale.CHINA);
 
     public static void sort(String[] a, int lo, int hi, int d) {
         for (int i = lo; i < hi; i++)
