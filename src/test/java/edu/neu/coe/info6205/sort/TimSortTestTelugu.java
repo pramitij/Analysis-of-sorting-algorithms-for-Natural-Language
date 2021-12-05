@@ -18,7 +18,6 @@ public class TimSortTestTelugu {
         String[] sortedTelugu = new String[]{"అన్నారు", "కరోనా", "నటుడు", "బానందం" };
 
         TimSort.sort(unsortedTelugu);
-        System.out.println(Arrays.toString(unsortedTelugu));
         assertArrayEquals(sortedTelugu, unsortedTelugu);
     }
 

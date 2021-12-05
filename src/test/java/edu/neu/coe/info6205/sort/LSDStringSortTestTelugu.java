@@ -18,7 +18,6 @@ public class LSDStringSortTestTelugu {
         String[] sortedTelugu = new String[]{"అన్నారు", "కరోనా", "నటుడు", "బానందం" };
 
         LSDStringSort.sort(unsortedTelugu);
-        System.out.println(Arrays.toString(unsortedTelugu));
         assertArrayEquals(sortedTelugu, unsortedTelugu);
     }
 
@@ -37,7 +36,6 @@ public class LSDStringSortTestTelugu {
         assertArrayEquals(aArray, bArray);
 
     }
-    // Working fine
 
     @Test
     public void sortShuffledTelugu1000() throws IOException {
@@ -51,13 +49,10 @@ public class LSDStringSortTestTelugu {
         Arrays.sort(bArray);
 
         LSDStringSort.sort(aArray);
-        for(int i=0;i<1000;i++){
-            System.out.println(aArray[i]+" "+bArray[i]);
-        }
+
         assertArrayEquals(aArray, bArray);
 
     }
-    // Working fine
 
 
 }
