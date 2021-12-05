@@ -24,14 +24,12 @@ public class MSDStringSortTestTelugu {
 
     @Test
     public void sortShuffledTelugu() throws IOException {
-        List<String> a = FileUtil.readFile("src/main/resources/shuffledTelugu.txt");
-        List<String> b = FileUtil.readFile("src/main/resources/shuffledTelugu.txt");
+        List<String> a = FileUtil.readFile("src/main/resources/1000-telugu-words-shuffled.txt");
+        List<String> b = FileUtil.readFile("src/main/resources/1000-telugu-words-sorted.txt");
         String[] aArray = new String[a.size()];
         String[] bArray = new String[b.size()];
         a.toArray(aArray);
         b.toArray(bArray);
-
-        Arrays.sort(bArray);
 
         MSDStringSort.sort(aArray);
         assertArrayEquals(aArray, bArray);

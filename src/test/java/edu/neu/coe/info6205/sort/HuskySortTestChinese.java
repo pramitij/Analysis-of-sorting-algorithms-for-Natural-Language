@@ -1,7 +1,6 @@
 package edu.neu.coe.info6205.sort;
 
 
-import com.ibm.icu.text.Collator;
 import edu.neu.coe.info6205.sort.huskysort.HuskyCoderFactory;
 import edu.neu.coe.info6205.sort.huskysort.PureHuskySort;
 import edu.neu.coe.info6205.sort.util.FileUtil;
@@ -10,8 +9,6 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.List;
-import java.util.Locale;
 
 import static org.junit.Assert.assertArrayEquals;
 
@@ -26,15 +23,18 @@ public class HuskySortTestChinese {
         assertArrayEquals(expected, input);
     }
 
+
     @Test
-    public void GeneralTest() throws IOException {
-        String[] expected = FileUtil.readFileInRange("src/main/resources/sortedChinese.txt",5);
-        String[] input = Arrays.copyOf(expected,expected.length);
-        Collections.shuffle(Arrays.asList(input));
-        new PureHuskySort<>(HuskyCoderFactory.asciiCoder, false, false).sort(input);
-        assertArrayEquals(expected, input);
+    public void GeneralTest1() throws IOException {
+        String[] a = FileUtil.readFileInRange("src/main/resources/1000-chinese-words-sorted.txt",1000);
+        String[] b = FileUtil.readFileInRange("src/main/resources/1000-chinese-words-shuffled.txt",1000);
 
+        new PureHuskySort<>(HuskyCoderFactory.asciiCoder, false, false).sort(b);
 
+        for(int i=0;i<1000;i++){
+            System.out.println(b[i]);
+        }
+        assertArrayEquals(a, b);
 
     }
 }

@@ -23,9 +23,9 @@ public class TimSortTestTelugu {
     }
 
     @Test
-    public void sortShuffledTelugu() throws IOException {
-        List<String> a = FileUtil.readFile("src/main/resources/shuffledTelugu.txt");
-        List<String> b = FileUtil.readFile("src/main/resources/shuffledTelugu.txt");
+    public void sortShuffled_Telugu() throws IOException {
+        List<String> a = FileUtil.readFile("src/main/resources/shuffled_Telugu.txt");
+        List<String> b = FileUtil.readFile("src/main/resources/shuffled_Telugu.txt");
         String[] aArray = new String[a.size()];
         String[] bArray = new String[b.size()];
         a.toArray(aArray);

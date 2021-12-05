@@ -17,8 +17,6 @@ public class TimSortTestChinese {
     public void sortSeaShells() {
         String[] sortedChinese = new String[]{"阿冰", "阿冰冰", "阿超"};
         String[] unsortedChinese = new String[]{"阿超", "阿冰", "阿冰冰"};
-//        String[] sortedChinese = new String[]{"阿滨", "阿春春", "阿丹丹", "阿鼎"};
-//        String[] unsortedChinese = new String[]{"阿丹丹", "阿鼎", "阿滨", "阿春春" };
         Arrays.sort(unsortedChinese);
         TimSortChinese.sort(unsortedChinese);
         System.out.println(Arrays.toString(unsortedChinese));
@@ -27,8 +25,8 @@ public class TimSortTestChinese {
 
     @Test
     public void GeneralTest() throws IOException {
-        String[] a = FileUtil.readFileInRange("src/main/resources/shuffledChinese.txt",100);
-        String[] b = FileUtil.readFileInRange("src/main/resources/shuffledChinese.txt",100);
+        String[] a = FileUtil.readFileInRange("src/main/resources/1000-chinese-words-shuffled.txt",1000);
+        String[] b = FileUtil.readFileInRange("src/main/resources/1000-chinese-words-shuffled.txt",1000);
         Collator collator = Collator.getInstance(Locale.CHINA);
         Arrays.sort(a,(x1, x2)->collator.compare(x1,x2));
         TimSortChinese.sort(b);
@@ -39,4 +37,6 @@ public class TimSortTestChinese {
         assertArrayEquals(a, b);
 
     }
+
+
 }
