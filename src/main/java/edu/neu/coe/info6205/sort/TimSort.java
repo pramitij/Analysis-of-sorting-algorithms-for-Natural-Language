@@ -1,8 +1,8 @@
 package edu.neu.coe.info6205.sort;
 
+//from: https://www.geeksforgeeks.org/timsort/
 
 public class TimSort {
-    //static ChineseComparator t=new ChineseComparator();
     static int RUN = 32;
 
     public static int compare(String s1, String s2) {
@@ -99,11 +99,5 @@ public class TimSort {
                     merge(a, beg, mid, end);
             }
         }
-    }
-    /* function to print the array elements */
-    void printArr(String[] a, int n)
-    {
-        for (int i = 0; i < n; i++)
-            System.out.print(a[i] + " ");
     }
 }

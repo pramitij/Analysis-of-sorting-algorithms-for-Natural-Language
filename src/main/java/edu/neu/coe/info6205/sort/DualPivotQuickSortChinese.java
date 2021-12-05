@@ -1,5 +1,5 @@
 package edu.neu.coe.info6205.sort;
-
+//from: https://algs4.cs.princeton.edu/23quicksort/QuickDualPivot.java.html
 import com.ibm.icu.text.Collator;
 import java.util.Locale;
 
@@ -7,7 +7,7 @@ public class DualPivotQuickSortChinese {
 
     // quicksort the array a[] using dual-pivot quicksort
     public static void sort(Comparable[] a) {
-//        StdRandom.shuffle(a);
+        StdRandom.shuffle(a);
         sort(a, 0, a.length - 1);
         assert isSorted(a);
     }

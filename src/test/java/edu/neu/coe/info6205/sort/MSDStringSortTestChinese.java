@@ -17,8 +17,6 @@ public class MSDStringSortTestChinese {
     public void sortSeaShells() {
         String[] sortedChinese = new String[]{"阿冰", "阿冰冰", "阿超"};
         String[] unsortedChinese = new String[]{"阿超", "阿冰", "阿冰冰"};
-//        String[] sortedChinese = new String[]{"阿滨", "阿春春", "阿丹丹", "阿鼎"};
-//        String[] unsortedChinese = new String[]{"阿丹丹", "阿鼎", "阿滨", "阿春春" };
         Arrays.sort(unsortedChinese);
         MSDStringSortChinese.sort(unsortedChinese);
         System.out.println(Arrays.toString(unsortedChinese));

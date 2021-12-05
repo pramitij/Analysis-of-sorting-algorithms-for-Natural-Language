@@ -1,0 +1,52 @@
+ 0 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: MSDStringSort: 250000 elements with 5 runs
+5243.3980566
+36824 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: LSDStringSort: 250000 elements with 5 runs
+6046.1994334
+78727 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: DualPivotQuickSort: 250000 elements with 5 runs
+3934.2791263999998
+106643 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: TimSort: 250000 elements with 5 runs
+3783.7042602
+134202 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: HuskySort: 250000 elements with 5 runs
+165.51187520000002
+135423 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: MSDStringSort: 500000 elements with 5 runs
+9004.409708199999
+199266 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: LSDStringSort: 500000 elements with 5 runs
+10815.9708126
+274860 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: DualPivotQuickSort: 500000 elements with 5 runs
+8026.6867184
+331275 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: TimSort: 500000 elements with 5 runs
+7746.8357384
+385832 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: HuskySort: 500000 elements with 5 runs
+334.4823602
+388332 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: MSDStringSort: 1000000 elements with 5 runs
+17909.006105
+513951 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: LSDStringSort: 1000000 elements with 5 runs
+21682.8553954
+665381 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: DualPivotQuickSort: 1000000 elements with 5 runs
+17007.041908799998
+784358 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: TimSort: 1000000 elements with 5 runs
+16243.181951
+897798 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: HuskySort: 1000000 elements with 5 runs
+703.1959474
+902878 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: MSDStringSort: 2000000 elements with 5 runs
+38672.0201942
+1174548 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: LSDStringSort: 2000000 elements with 5 runs
+43178.909983800004
+1476373 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: DualPivotQuickSort: 2000000 elements with 5 runs
+37396.729479199996
+1741147 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: TimSort: 2000000 elements with 5 runs
+34210.7253238
+1980451 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: HuskySort: 2000000 elements with 5 runs
+1394.0761286000002
+1990621 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: MSDStringSort: 4000000 elements with 5 runs
+83389.2843824
+2575582 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: LSDStringSort: 4000000 elements with 5 runs
+85200.5396988
+3171981 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: DualPivotQuickSort: 4000000 elements with 5 runs
+78832.596225
+3723481 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: TimSort: 4000000 elements with 5 runs
+71376.721053
+4222865 [main] INFO edu.neu.coe.info6205.sort.Benchmark.Benchmark_Timer  - Begin run: HuskySort: 4000000 elements with 5 runs
+2975.4181498000003
+
+Process finished with exit code 0

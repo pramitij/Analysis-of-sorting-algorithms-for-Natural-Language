@@ -30,7 +30,4 @@ public class HuskySortTest {
         System.out.println(Arrays.toString(input1));
         assertArrayEquals(expected1, input1);
     }
-
-
-
 }

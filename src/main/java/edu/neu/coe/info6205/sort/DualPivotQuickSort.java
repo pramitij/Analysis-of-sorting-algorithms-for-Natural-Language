@@ -1,10 +1,10 @@
 package edu.neu.coe.info6205.sort;
-
+//from:https://algs4.cs.princeton.edu/23quicksort/QuickDualPivot.java.html
 public class DualPivotQuickSort {
 
     // quicksort the array a[] using dual-pivot quicksort
     public static void sort(Comparable[] a) {
-//        StdRandom.shuffle(a);
+        StdRandom.shuffle(a);
         sort(a, 0, a.length - 1);
         assert isSorted(a);
     }
@@ -65,21 +65,12 @@ public class DualPivotQuickSort {
         return true;
     }
 
-
-
     // print array to standard output
     private static void show(Comparable[] a) {
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
         }
     }
-
-//    // Read strings from standard input, sort them, and print.
-//    public static void main(String[] args) {
-//        //String[] a = StdIn.readAllStrings();
-//        DualPivotQuickSort.sort(a);
-//        show(a);
-//    }
 
 }
 
