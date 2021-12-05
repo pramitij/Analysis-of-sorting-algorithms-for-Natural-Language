@@ -3,10 +3,11 @@ package edu.neu.coe.info6205.sort;
 import com.ibm.icu.text.Collator;
 import com.ibm.icu.util.ULocale;
 
+//from: https://www.geeksforgeeks.org/timsort/
+
 import java.util.Locale;
 
 public class TimSortChinese {
-    //static ChineseComparator t=new ChineseComparator();
     static int RUN = 32;
 
     public static int compare(String s1, String s2) {
@@ -103,11 +104,5 @@ public class TimSortChinese {
                     merge(a, beg, mid, end);
             }
         }
-    }
-    /* function to print the array elements */
-    void printArr(String[] a, int n)
-    {
-        for (int i = 0; i < n; i++)
-            System.out.print(a[i] + " ");
     }
 }
