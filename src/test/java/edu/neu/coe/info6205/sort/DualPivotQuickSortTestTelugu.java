@@ -16,7 +16,6 @@ public class DualPivotQuickSortTestTelugu {
         String[] sortedTelugu = new String[]{"అన్నారు", "కరోనా", "నటుడు", "బానందం" };
 
         DualPivotQuickSort.sort(unsortedTelugu);
-        System.out.println(Arrays.toString(unsortedTelugu));
         assertArrayEquals(sortedTelugu, unsortedTelugu);
     }
 

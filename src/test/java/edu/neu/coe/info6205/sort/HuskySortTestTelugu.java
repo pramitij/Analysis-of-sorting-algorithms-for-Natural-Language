@@ -19,7 +19,7 @@ public class HuskySortTestTelugu {
         String[] sortedTelugu = new String[]{"అన్నారు", "కరోనా", "నటుడు", "బానందం" };
 
         new PureHuskySort<>(HuskyCoderFactory.asciiCoder, false, false).sort(unsortedTelugu);
-        System.out.println(Arrays.toString(unsortedTelugu));
+
         assertArrayEquals(sortedTelugu, unsortedTelugu);
     }
 
@@ -51,9 +51,6 @@ public class HuskySortTestTelugu {
         Arrays.sort(bArray);
 
         new PureHuskySort<>(HuskyCoderFactory.asciiCoder, false, false).sort(aArray);
-        for(int i=0;i<1000;i++){
-            System.out.println(aArray[i]+" "+bArray[i]);
-        }
         assertArrayEquals(aArray, bArray);
 
     }

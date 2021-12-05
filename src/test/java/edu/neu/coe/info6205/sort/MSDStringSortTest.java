@@ -16,7 +16,6 @@ public class MSDStringSortTest {
     @Test
     public void sortSeaShells() {
         MSDStringSort.sort(input);
-        System.out.println(Arrays.toString(input));
         assertArrayEquals(expected, input);
     }
 
@@ -39,7 +38,6 @@ public class MSDStringSortTest {
     @Test
     public void sortEnglishString() {
         MSDStringSort.sort(input1);
-        System.out.println(Arrays.toString(input1));
         assertArrayEquals(expected1, input1);
     }
 

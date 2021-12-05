@@ -19,7 +19,6 @@ public class TimSortTestChinese {
         String[] unsortedChinese = new String[]{"阿超", "阿冰", "阿冰冰"};
         Arrays.sort(unsortedChinese);
         TimSortChinese.sort(unsortedChinese);
-        System.out.println(Arrays.toString(unsortedChinese));
         assertArrayEquals(sortedChinese, unsortedChinese);
     }
 
@@ -31,9 +30,7 @@ public class TimSortTestChinese {
         Arrays.sort(a,(x1, x2)->collator.compare(x1,x2));
         TimSortChinese.sort(b);
 
-        for(int i=0;i<10;i++){
-            System.out.println(a[i] + " " + b[i]);
-        }
+
         assertArrayEquals(a, b);
 
     }
@@ -45,7 +42,6 @@ public class TimSortTestChinese {
         String[] unsortedChinese = new String[]{"曾佳珍", "闫炳华", "余康康", "侯封", "范亚文", "江兆涛"};
         Arrays.sort(unsortedChinese);
         TimSortChinese.sort(unsortedChinese);
-        System.out.println(Arrays.toString(unsortedChinese));
         assertArrayEquals(sortedChinese, unsortedChinese);
     }
 
@@ -55,7 +51,6 @@ public class TimSortTestChinese {
         String[] unsortedChinese = new String[]{"曾佳珍", "闫炳华", "余康康", "侯封", "范亚文", "江兆涛", "刘久胜", "冯翠君", "赖春宝", "李继翔", "范成章", "杜丽伟", "廖前进", "姚佳鑫", "潘从伟","应丽娜" };
         Arrays.sort(unsortedChinese);
         TimSortChinese.sort(unsortedChinese);
-        System.out.println(Arrays.toString(unsortedChinese));
         assertArrayEquals(sortedChinese, unsortedChinese);
     }
 
@@ -66,7 +61,6 @@ public class TimSortTestChinese {
         String[] unsortedChinese = new String[]{"曾佳珍", "闫炳华", "余康康", "侯封", "范亚文", "江兆涛", "刘久胜", "冯翠君", "赖春宝", "李继翔", "范成章", "杜丽伟", "廖前进", "姚佳鑫", "潘从伟","应丽娜", "杨列仁", "杨列仁", "刘定基", "刘定基", "李开森", "肖燕珊", "林鸿森", "顾新新", "陈立昆"};
         Arrays.sort(unsortedChinese);
         TimSortChinese.sort(unsortedChinese);
-        System.out.println(Arrays.toString(unsortedChinese));
         assertArrayEquals(sortedChinese, unsortedChinese);
     }
 

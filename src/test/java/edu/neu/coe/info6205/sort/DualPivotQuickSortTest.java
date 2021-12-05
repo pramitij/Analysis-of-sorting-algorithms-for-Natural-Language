@@ -2,7 +2,6 @@ package edu.neu.coe.info6205.sort;
 
 import org.junit.Test;
 
-import java.util.Arrays;
 
 import static org.junit.Assert.assertArrayEquals;
 
@@ -14,7 +13,6 @@ public class DualPivotQuickSortTest {
     @Test
     public void sortSeaShells() {
         DualPivotQuickSort.sort(input);
-        System.out.println(Arrays.toString(input));
         assertArrayEquals(expected, input);
     }
 
@@ -24,7 +22,6 @@ public class DualPivotQuickSortTest {
     @Test
     public void sortEnglishString() {
         DualPivotQuickSort.sort(input1);
-        System.out.println(Arrays.toString(input1));
         assertArrayEquals(expected1, input1);
     }
 

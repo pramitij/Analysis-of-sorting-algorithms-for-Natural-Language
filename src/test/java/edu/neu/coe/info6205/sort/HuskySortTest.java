@@ -5,7 +5,6 @@ import edu.neu.coe.info6205.sort.huskysort.HuskyCoderFactory;
 import edu.neu.coe.info6205.sort.huskysort.PureHuskySort;
 import org.junit.Test;
 
-import java.util.Arrays;
 
 import static org.junit.Assert.assertArrayEquals;
 
@@ -17,7 +16,6 @@ public class HuskySortTest {
     @Test
     public void sortSeaShells() {
         new PureHuskySort<>(HuskyCoderFactory.asciiCoder, false, false).sort(input);
-        System.out.println(Arrays.toString(input));
         assertArrayEquals(expected, input);
     }
 
@@ -27,7 +25,6 @@ public class HuskySortTest {
     @Test
     public void sortEnglishString() {
         new PureHuskySort<>(HuskyCoderFactory.asciiCoder, false, false).sort(input1);
-        System.out.println(Arrays.toString(input1));
         assertArrayEquals(expected1, input1);
     }
 }

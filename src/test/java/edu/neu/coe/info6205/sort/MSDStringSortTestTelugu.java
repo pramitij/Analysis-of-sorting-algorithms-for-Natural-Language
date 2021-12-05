@@ -5,7 +5,6 @@ import edu.neu.coe.info6205.sort.util.FileUtil;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertArrayEquals;
@@ -18,7 +17,6 @@ public class MSDStringSortTestTelugu {
         String[] sortedTelugu = new String[]{"అన్నారు", "కరోనా", "నటుడు", "బానందం" };
 
         MSDStringSort.sort(unsortedTelugu);
-        System.out.println(Arrays.toString(unsortedTelugu));
         assertArrayEquals(sortedTelugu, unsortedTelugu);
     }
 
