@@ -15,7 +15,7 @@ public class MSDStringSort {
     public static void sort(String[] a) {
         int n = a.length;
         aux = new String[n];
-        sort(a, 0, n, 0);
+        sort(a, 0, n-1, 0);
     }
 
     /**
@@ -29,17 +29,17 @@ public class MSDStringSort {
      */
     private static void sort(String[] a, int lo, int hi, int d) {
         //if (hi < lo + cutoff) InsertionSortMSD.sort(a, lo, hi, d);
-        if (hi < lo + cutoff) InsertionSortMSD.sort(a, lo, hi, d);
+        if (hi < lo + cutoff) InsertionSortMSD.sort(a, lo, hi+1, d);
         else {
             int[] count = new int[radix + 2];        // Compute frequency counts.
-            for (int i = lo; i < hi; i++)
+            for (int i = lo; i <=hi; i++)
                 count[charAt(a[i], d) + 2]++;
             for (int r = 0; r < radix + 1; r++)      // Transform counts to indices.
                 count[r + 1] += count[r];
-            for (int i = lo; i < hi; i++)     // Distribute.
+            for (int i = lo; i <=hi; i++)     // Distribute.
                 aux[count[charAt(a[i], d) + 1]++] = a[i];
             // Copy back.
-            if (hi - lo >= 0) System.arraycopy(aux, 0, a, lo, hi - lo);
+            if (hi + 1 - lo >= 0) System.arraycopy(aux, 0, a, lo, hi + 1 - lo);
             // Recursively sort for each character value.
             // TO BE IMPLEMENTED
             for (int r = 0; r < radix; r++)

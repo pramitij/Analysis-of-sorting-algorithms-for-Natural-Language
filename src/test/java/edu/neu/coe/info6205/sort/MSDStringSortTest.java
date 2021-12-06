@@ -23,9 +23,10 @@ public class MSDStringSortTest {
     public void sort1000_English_words() throws IOException {
 
 
-        String[] a = FileUtil.readFileInRange("src/main/resources/1000-english-words-sorted.txt",1000);
+        String[] a = FileUtil.readFileInRange("src/main/resources/1000-english-words-shuffled.txt",1000);
         String[] b = FileUtil.readFileInRange("src/main/resources/1000-english-words-shuffled.txt",1000);
 
+        Arrays.sort(a);
         MSDStringSort.sort(b);
 
         assertArrayEquals(a, b);

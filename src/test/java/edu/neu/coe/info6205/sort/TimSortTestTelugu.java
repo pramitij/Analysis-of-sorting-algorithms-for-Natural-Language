@@ -33,6 +33,24 @@ public class TimSortTestTelugu {
         Arrays.sort(bArray);
 
         TimSort.sort(aArray);
+
+        assertArrayEquals(aArray, bArray);
+
+    }
+
+
+
+    @Test
+    public void sortShuffledTelugu() throws IOException {
+        List<String> a = FileUtil.readFile("src/main/resources/1000-telugu-words-shuffled.txt");
+        List<String> b = FileUtil.readFile("src/main/resources/1000-telugu-words-shuffled.txt");
+        String[] aArray = new String[a.size()];
+        String[] bArray = new String[b.size()];
+        a.toArray(aArray);
+        b.toArray(bArray);
+        Arrays.sort(bArray);
+        TimSort.sort(aArray);
+
         assertArrayEquals(aArray, bArray);
 
     }
