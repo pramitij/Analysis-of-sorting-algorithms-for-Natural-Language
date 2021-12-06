@@ -2,11 +2,12 @@
 
 ## Benchmarking
 The Driver class is the entry to benchmark all the sorting algorithms.</br>
-To run the benchmark for Chinese words.</br>
+
+To run the benchmark for Chinese words:</br>
 Go to <i>src>main>java.edu.neu.coe.info6205.sort>driver.java</i></br>
 Click on run or Control + R to run the driver class and start benchmarking.</br>
 
-To run the benchmark for Telugu words.</br>
+To run the benchmark for Telugu words:</br>
 Go to <i>src>main>java.edu.neu.coe.info6205.sort>driverTelugu.java</i></br>
 Click on run or Control + R to run the driver class and start benchmarking.</br>
 
@@ -42,9 +43,9 @@ The files used for test cases are as follows:</br>
   * <i>1000-chinese-words-shuffled.txt</i></br>
   * <i>1000-telugu-words-shuffled.txt</i></br>
 
-All the input and output files are present in src>main>java>resources.</br>
+All the input and output files are present in <i>src>main>java>resources</i></br>
 
 <i>OutputChinese.txt</i> and <i>OutputTelugu.txt</i> consist of the log output of the benchmarking.</br>
 
-All the tables and graphs plotted are in Graphs.xlsx</br>
+All the tables and graphs plotted are in <i>Graphs.xlsx</i></br>
 
