@@ -2,21 +2,21 @@
 The Driver class is the entry to benchmark all the sorting algorithms.
 
 ## To run the benchmark for Chinese words:
-Go to `src>main>java.edu.neu.coe.info6205.sort>driver.java`
-Click on run or `Control + R` to run the driver class and start benchmarking.
+- Go to `src>main>java.edu.neu.coe.info6205.sort>driver.java`
+- Click on run or `Control + R` to run the driver class and start benchmarking.
 
 ## To run the benchmark for Telugu words:
-Go to `src>main>java.edu.neu.coe.info6205.sort>driverTelugu.java`
-Click on run or `Control + R` to run the driver class and start benchmarking.
+- Go to `src>main>java.edu.neu.coe.info6205.sort>driverTelugu.java`
+- Click on run or `Control + R` to run the driver class and start benchmarking.
 
 ## Test Cases
 ### To run the test cases for Chinese words:
-Go to `src>test>java.edu.neu.coe.info6205.sort>` choose the test case to run
-Click on run or `Control + R` to run the test cases.
+- Go to `src>test>java.edu.neu.coe.info6205.sort>` choose the test case to run
+- Click on run or `Control + R` to run the test cases.
 
 ### To run the test cases for Telugu words:
-Go to `src>test>java.edu.neu.coe.info6205.sort>` choose the algorithm test case to run
-Click on run or `Control + R` to run the test cases.
+- Go to `src>test>java.edu.neu.coe.info6205.sort>` choose the algorithm test case to run
+- Click on run or `Control + R` to run the test cases.
 
 ## Algorithms
 
@@ -34,7 +34,7 @@ Click on run or `Control + R` to run the test cases.
 - LSD Radix Sort
 - Dual Pivot Quicksort
 - Huskysort
-- 
+  
 All the sorting algorithms can be found in `src>test>java.edu.neu.coe.info6205.sort`
 
 ## Resource Files
